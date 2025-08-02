@@ -1,0 +1,19 @@
+.mainContainer{
+    background-image: url('https://www.digitaltrends.com/wp-content/uploads/2019/11/amazon_kindle_fire_hd_10_kids_edition_1.jpg?p=1');
+          }
+    .mainContainer{
+        background-image: url('https://www.digitaltrends.com/wp-content/uploads/2019/11/amazon_kindle_fire_hd_10_kids_edition_1.jpg?p=1');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .contentContainer{
+        height: 250px;
+    }
+    .contContainer{
+        margin-top: 100px;
+        margin-left: 450px;
+    }
+    .card{
+       background-color: rgba(70, 51, 90, 0.632);
+    }
+    has context menu

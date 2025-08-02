@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods Demo</title>
+    <link rel="stylesheet" href="string_method.css">
+</head>
+<body>
+    <div class="box">
+    <h2>String Methods Demo</h2>
+    <label for="userInput">Enter a string:</label>
+    <input type="text" id="userInput">
+    <button onclick="demonstrateStringMethods()">Submit</button>
+    <div id="output">Ouput:</div>
+    </div>
+    <script>  
+        function demonstrateStringMethods() {     
+            var inputString = document.getElementById("userInput").value;
+            var output = "<p><strong>Input String:</strong> " + inputString + "</p>";
+            output += "<p>Contains 'world'? " + inputString.includes("world") + "</p>";
+            output += "<p>Equals 'Hello, world!'? " + (inputString === "Hello, world!") + "</p>";
+            var sortedString = inputString.split("").sort().join("");
+            output += "<p>Sorted characters: " + sortedString + "</p>";
+            var replacedString = inputString.replaceAll("Hello", "Hi");
+            output += "<p>Replaced 'Hello' with 'Hi': " + replacedString + "</p>";	
+            var splitArray = inputString.split(",");
+            output += "<p>Split by comma: " + splitArray.join(", ") + "</p>";
+            document.getElementById("output").innerHTML = output;
+        }
+    </script>
+</body>
+</html>

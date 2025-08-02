@@ -1,0 +1,38 @@
+table,th,td
+{
+    
+    border: 3px solid black;
+    text-align: center;
+    font-size: medium;
+    margin-left: 200px;
+    
+
+    .ps{
+        background-color: gold;
+    }
+    .ls{
+        background-color: lime;
+    }
+    .aq{
+        background-color: blue;
+    }
+    .aj{
+        background-color: deeppink;
+    }
+    .os{
+        background-color:aqua ;
+    }
+    .es{
+        background-color: orangered;
+    }
+    .pb{
+        background-color:maroon;
+    }
+    
+}
+body{
+    
+    background-image: url('https://wallpapercave.com/wp/wp2046110.jpg');
+    background-repeat: no-repeat;
+    background-size:1400px;
+}  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods Demo</title>
+    <script>        
+        function demonstrateArrayMethods() {
+            var userInput = prompt("Enter numbers separated by commas (e.g., 5,2,8,1,4,7):");
+            var numbers = userInput.split(",").map(Number); 
+            var output = "<p><strong>Original Array:</strong> " + numbers.join(", ") + "</p>";
+            output += "<p><strong>Array Methods Demonstrations:</strong></p>";
+            numbers.push(10);
+            output += "<p>After pushing 10: " + numbers.join(", ") + "</p>";
+            var poppedElement = numbers.pop();
+            output += "<p>After popping: " + numbers.join(", ") + "</p>";
+            output += "<p>Popped element: " + poppedElement + "</p>";
+            var shiftedElement = numbers.shift();
+            output += "<p>After shifting: " + numbers.join(", ") + "</p>";
+            output += "<p>Shifted element: " + shiftedElement + "</p>";
+            numbers.unshift(3);
+            output += "<p>After unshifting 3: " + numbers.join(", ") + "</p>";
+            var slicedArray = numbers.slice(1, 3);
+            output += "<p>Sliced array (index 1 to 2): " + slicedArray.join(", ") + "</p>";
+            var concatenatedArray = numbers.concat([6, 9]);
+            output += "<p>Concatenated array: " + concatenatedArray.join(", ") + "</p>";
+            numbers.reverse();
+            output += "<p>Reversed array: " + numbers.join(", ") + "</p>";
+            numbers.sort();
+            output += "<p>Sorted array: " + numbers.join(", ") + "</p>";
+            var joinedString = numbers.join(" *** ");
+            output += "<p>Joined array with '***': " + joinedString + "</p>";
+            document.getElementById("output").innerHTML = output;
+        }
+    </script>
+</head>
+<body>
+    <h2>Array Methods Demo</h2>
+    <button onclick="demonstrateArrayMethods()">Run Array Methods</button>
+    <div id="output"></div>
+</body>
+</html>

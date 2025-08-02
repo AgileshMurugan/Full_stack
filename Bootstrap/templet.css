@@ -1,0 +1,41 @@
+.navbarconainer{
+    
+    display: flex;
+    flex-direction: row;
+    background-color:seashell;
+    
+}
+.navbargrand{
+    display: flex;
+    flex-direction: row;
+}
+
+.brands{
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+button:hover {
+    background-color:lawngreen;
+  }
+.image{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+body{
+    background-color: antiquewhite;
+}
+@media (max-width:600px){
+    body{
+        background: #9e0f0f;
+    }
+}

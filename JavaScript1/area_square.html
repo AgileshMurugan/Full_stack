@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding the area of square</title>
+    <link rel="stylesheet" href="area_square.css">
+    <script>
+        function areaforsquare()
+        {
+            var side1= document.getElementById('side1').value;
+            side1 = parseInt(side1);
+            var side2 = document.getElementById('side2').value;
+            side2 = parseInt(side2);
+            var area = side1 * side2;
+            document.getElementById('result').innerHTML = "Area of the square is"+" "+area+" "+"cm";
+        }
+    </script>
+</head>
+<body>
+    <div class="block">
+        <h1>Calculating the Area of square</h1>
+        <br>
+        <label>Side 1:</label>
+        <input type="number" id="side1" placeholder="Value of side (cm)" />
+        <br>
+        <label>Side 2:</label>
+        <input type="number" id="side2" placeholder="Value of side (cm)" />
+        <br><br>
+        <button onclick="areaforsquare()" id="button">Calculate</button>
+        <p id="result"></p>
+    </div>
+</body>
+</html>

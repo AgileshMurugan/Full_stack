@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular experssion</title>
+<script>
+    function validateEmail(email){
+        var regex = /^[a-z0-9]+@[a-z]+\.[a-z]{2,}$/;
+        return regex.test(email);
+    }
+    var emailInput= prompt("please enter an email address:");
+    var isvalid= validateEmail(emailInput);
+   
+    if (isvalid){
+        alert("The email address" + emailInput + "is valid.");
+    }
+    else {
+        alert("Email adress is invalid.");
+    }
+
+</script>
+</head>
+<body>
+    <h1>Email validation</h1>
+</body>
+</html>

@@ -1,0 +1,43 @@
+table,td{
+    border: 3px solid black;
+    text-align: center;
+    font-size: medium;
+    margin-left: 300px;
+    padding: 10px;
+
+    .cp{
+        background-color:magenta;
+    }
+    .s{
+        background-color:yellow ;
+    }
+    .a{
+        background-color: red;
+    }
+    .e{
+        background-color: aqua;
+    }
+    .L{
+        color: red;
+        font-size: x-large;
+    }
+    .M{
+        color:blue;
+        font-size: x-large;
+    }
+    .N{
+        color: mediumvioletred;
+        font-size:x-large;
+    }
+     .c{
+        background-color: chartreuse;
+     }
+ }
+h1
+{
+    text-align:center;
+}
+
+body{
+    background-color:aliceblue;
+}

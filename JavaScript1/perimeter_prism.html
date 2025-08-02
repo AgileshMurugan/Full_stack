@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perimeter of Prism</title>
+    <link rel="stylesheet" href="perimeter_prism.css">
+    <script>
+        function calculatePerimeter() {
+            const length = parseFloat(document.getElementById('length').value);
+            const width = parseFloat(document.getElementById('width').value);
+            const perimeter = 2 * (length + width);
+            // alert(perimeter)
+            if (!isNaN(length) && !isNaN(width) && length > 0 && width > 0) {      
+                document.getElementById('result').innerHTML = 'The perimeter of the base is:'+perimeter+ "cm";
+            } else {
+                document.getElementById('result').innerHTML = 'Please enter valid positive numbers for length and width.';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="block">
+    <h1>Perimeter of a Rectangular Prism</h1>
+    <p>The <strong>perimeter</strong> of the base of a rectangular prism is the sum of all the sides of the base.
+        For a rectangle, it is calculated as:</p>
+    <p><strong> Perimeter = 2 *(Length + Width) </strong></p>
+
+    <form id="perimeterForm">
+        <label>Length of the Base (L):</label>
+        <input type="number" id="length" placeholder="Enter length" required>
+
+        <label>Width of the Base (W):</label>
+        <input type="number" id="width" placeholder="Enter width" required><br>
+
+        <button type="button" onclick="calculatePerimeter()">Calculate Perimeter</button>
+    </form>
+    <h2 id="result"></h2>
+    </div>
+</body>
+</html>

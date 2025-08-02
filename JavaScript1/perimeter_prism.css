@@ -1,0 +1,39 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 100px;
+}
+.block{
+  text-align:center;
+  background:rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgb(0, 0, 0);
+  width: 500px;
+margin-left: 300px;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+h1{
+    color: darkred;
+}
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#result {
+    margin-top: 20px;
+    font-size: 25px;
+    color:red;
+    text-align: center;

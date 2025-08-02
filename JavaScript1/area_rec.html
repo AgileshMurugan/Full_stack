@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Find The Area Of Rectangle</title>
+    <link rel="stylesheet" href="area_rec.css"/>
+    <script>
+        function area()
+        {
+            var height = document.getElementById('height').value;
+            height = parseInt(height);
+            var width = document.getElementById('width').value;
+            width = parseInt(width);
+
+            var area = height * width;
+            document.getElementById('result').innerHTML = "Area of the rectangle is"+" "+area+" "+"cm";
+        }
+    </script>
+</head>
+<body>
+    <div class="box">
+    <h1>Finding the Area of Rectangle</h1>
+    <br>
+    <label>Height:</label>
+    <input type="number" id="height" placeholder="Value of height (cm)" />
+    <br>
+    <label>Width:</label>
+    <input type="number" id="width" placeholder="Value of width (cm)" />
+    <br><br>
+    <button onclick="area()" id="button">Calculate</button>
+    <p id="result"></p>
+</div>
+</body>
+</html>

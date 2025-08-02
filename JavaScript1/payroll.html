@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payroll Calculator</title>
+
+</head>
+<body>
+  <h1>Payroll Calculator</h1>
+  
+  <label for="hoursWorked">Hours Worked:</label><br>
+  <input type="number" id="hoursWorked" placeholder="Enter hours worked"><br>
+  
+  <label for="hourlyRate">Hourly Rate (₹):</label><br>
+  <input type="number" id="hourlyRate" placeholder="Enter hourly rate" ><br>
+  
+  <label for="taxRate">Tax Rate (%):</label><br>
+  <input type="number" id="taxRate" placeholder="Enter tax rate" ><br>
+
+  <button onclick="calculatePayroll()">Calculate Payroll</button>
+
+  <div class="result" id="result"></div>
+
+  <script>
+    function calculatePayroll() {
+
+      const hoursWorked = parseFloat(document.getElementById("hoursWorked").value);
+      const hourlyRate = parseFloat(document.getElementById("hourlyRate").value);
+      const taxRate = parseFloat(document.getElementById("taxRate").value);
+
+
+      if (isNaN(hoursWorked) || isNaN(hourlyRate) || isNaN(taxRate) || hoursWorked < 0 || hourlyRate < 0 || taxRate < 0) {
+        alert("Please enter valid positive numbers.");
+        return;
+      }
+
+
+      const grossSalary = hoursWorked * hourlyRate;
+
+      const taxAmount = grossSalary * (taxRate / 100);
+
+      const netSalary = grossSalary - taxAmount;
+
+      document.getElementById("result").innerHTML = `
+        Gross Salary:₹${grossSalary.toFixed(2)}<br>
+        Tax Amount: ₹${taxAmount.toFixed(2)}<br>
+        Net Salary: ₹${netSalary.toFixed(2)}
+      `;
+    }
+  </script>
+</body>
+</html>
+
+

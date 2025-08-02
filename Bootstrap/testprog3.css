@@ -1,0 +1,40 @@
+.navbar{
+    padding-left: 280px;
+}
+.logo{
+    font-size: larger;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+h4{
+    padding-left: 630px;
+    color:rgb(0, 182, 182);
+}
+h6{
+    text-align: center;
+}
+.hint{
+    background-color: rgb(0, 182, 182);
+    height: 100px;
+}
+.about{
+    height: 150px;
+    box-shadow: ;
+}
+.icon1{
+    padding-left:60px;
+}
+.icon2{
+    padding-left: 60px;
+}
+.icon3{
+    padding-left: 60px;
+}
+.icon4{
+    padding-left: 60px;
+}
+

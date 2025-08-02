@@ -1,0 +1,117 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-image: url('https://www.imageshine.in/uploads/gallery/blue-purple-background-hd.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+  }
+  
+  #signup{
+      margin-top: 5vh;
+      height: 80vh;
+  }
+
+  .container {
+    text-align: center;
+    background:#ccc;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 4px 8px 20px black;
+  }
+
+  h1{
+    color: rgb(71, 0, 143);
+    margin-bottom: 30px;
+  }
+  
+  input {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: larger;
+  }
+
+  label{
+    font-size: large;
+  }
+
+  .password{
+    margin-left: 100px;
+    color: red;
+  }
+  
+  button {
+    padding: 10px 25px;
+    background-color:rgb(94, 0, 182);
+    color:antiquewhite;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  button:hover {
+    background-color:rgb(156, 59, 247);
+  }
+  a{
+    color:  rgb(71, 0, 143);
+  }
+
+  @media (max-width:450px) {
+    body{
+      height:100vh ;
+    }
+    #signup{
+      margin-top: 0vh;
+      height: 70vh;
+    }
+    
+   input{
+    width: 250px;
+    margin: 30px;
+    margin-top: 0vh;
+  }
+
+  .container{
+    margin: 0px ;
+    height: 60vh;
+    padding: 0vh;
+    width: 70vh;
+    justify-content: center;
+  }
+
+  }
+
+  @media (max-height:600px) {
+    .container{
+      height: 70vh;
+      padding: 0vh;
+      width: 80vh;
+      justify-content: center;
+    }
+    #signup{
+      height: 500px;
+    }
+    #login{
+      height: 450px;
+    }
+
+   input{
+    width: 250px;
+    margin: 30px;
+    margin-top: 0vh;
+   }
+
+    body{
+      height:600px ;
+    }
+
+  }

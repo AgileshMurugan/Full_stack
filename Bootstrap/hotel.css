@@ -1,0 +1,35 @@
+.top{
+    padding-left: 50px;
+    color:rgb(159, 218, 42);
+}
+.navbar{
+    padding-left:10px;
+ }
+ .button{
+    padding-left: 340px;
+ }
+ .foodimg{
+    padding-left: 200px;
+ }
+ .content{
+    background-color: cornsilk;
+ }
+ .video{
+    padding-left: 300px;
+ }
+ h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .content2{
+    padding-left: 600px;
+ }
+ .content3{
+    padding-left: 520px;
+    color: red;
+ }
+.about{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    background-color: cornsilk;
+    height: 210px;
+}

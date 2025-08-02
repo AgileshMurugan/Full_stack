@@ -1,0 +1,22 @@
+.maindiv
+{
+    text-align:center;
+    margin-top:100px;
+     
+}
+
+body{
+    background-image:url('https://wallpapers.com/images/hd/720p-sports-background-1280-x-720-3gp9bfisapvslalq.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.l{
+    background-color:green;
+    
+}
+form{
+    backdrop-filter: blur(3px);
+    width: 300px;
+    margin-left: 530px;
+}

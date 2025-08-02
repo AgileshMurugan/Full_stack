@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Checker</title>
+  <link rel="stylesheet" href="number_checker.css">
+  <script>
+    function checkNumber() {
+  const input = document.getElementById('numberInput').value;
+  const resultElement = document.getElementById('result');
+  
+  const number = parseFloat(input);
+  
+  if (isNaN(number)) {
+    resultElement.textContent = "Please enter a valid number.";
+    resultElement.style.color = "red";
+  } else if (number > 0) {
+    resultElement.textContent = `${number} is a Positive number.`;
+    resultElement.style.color = "green";
+  } else if (number < 0) {
+    resultElement.textContent = `${number} is a Negative number.`;
+    resultElement.style.color = "orange";
+  } else {
+    resultElement.textContent = "The number is Neutral (zero).";
+    resultElement.style.color = "blue";
+  }
+}
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Number Checker</h1>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="checkNumber()">Check Number</button>
+    <p id="result"></p>
+  </div>
+</body>
+</html>

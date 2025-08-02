@@ -1,0 +1,49 @@
+.header{
+    padding-left: 100px;
+}
+.navbar{
+   padding-left: 20px;
+}
+.options{
+    padding-left: 50px;
+}
+.image{
+    padding-left: 150px;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    background-image: url(https://img.freepik.com/free-photo/pair-man-woman-wearing-glasses-carried-lots-paper-bags-shopping_1150-27721.jpg?t=st=1738085248~exp=1738088848~hmac=2812830d57ceb92c0a4760da436307135b5e27fe3c856c0391d3def0dadf1fdb&w=360);
+    background-position-x:center;
+    background-size:700px;
+    background-repeat: no-repeat;
+    background-color:rgb(241, 246, 248);
+}
+.logo{
+    color: tomato;
+}
+.women
+{
+    /* border: 2px black solid; */
+    height: 200px;
+    width: 200px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+#female
+{
+    color: magenta;
+}
+.men
+{
+    /* border: 2px black solid; */
+    height: 200px;
+    width: 200px;
+    margin-top: 100px;
+    margin-left: 850px;
+}
+#male
+{
+    color: skyblue;
+}

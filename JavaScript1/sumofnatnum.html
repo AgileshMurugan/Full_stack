@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sum of N Natural Numbers</title>
+<script>
+    function calculateSum() {
+  let n = parseInt(document.getElementById('numberInput').value);
+  let sum = 0;
+
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+  }
+  document.getElementById('result').innerHTML = "Sum of first " + n + " numbers is " + sum;
+}
+</script>
+</head>
+<body>
+  <h1>Sum of N Natural Numbers</h1>
+  <input type="number" id="numberInput" placeholder="Enter a number">
+  <button onclick="calculateSum()">Calculate Sum</button>
+  <p id="result"></p>
+</body>
+</html>

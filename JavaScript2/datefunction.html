@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DateFunction</title>
+    <script>
+        function datecalculation(){
+            const userdate= document.getElementById("userdate").value;
+            const finaldate= new Date(userdate);
+            finaldate.setDate(finaldate.getDate()+90);
+            alert (finaldate.toLocaleDateString());
+        }
+    </script>
+</head>
+<body>
+    <label>Enter the start Date:</label>
+    <input type="date" id="userdate"/>
+    <button onclick="datecalculation()">checkdate</button>
+</body>
+</html>
